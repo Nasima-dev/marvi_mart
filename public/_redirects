@@ -1,0 +1,9 @@
+# Netlify Redirects Configuration for Marvi Mart
+# 1. Seamlessly map any legacy or cached /src/assets/images/* paths to /images/*
+/src/assets/images/*  /images/:splat  200
+
+# 2. Allow direct access to uploaded product images if present
+/uploads/*  /uploads/:splat  200
+
+# 3. Single Page App (SPA) fallback to index.html for all client-side routes
+/*  /index.html  200

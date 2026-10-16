@@ -1,0 +1,15 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Seamlessly handle legacy or direct references to /src/assets/images/*
+[[redirects]]
+  from = "/src/assets/images/*"
+  to = "/images/:splat"
+  status = 200
+
+# Client-side routing SPA fallback for Netlify Drop & Netlify production deployments
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
