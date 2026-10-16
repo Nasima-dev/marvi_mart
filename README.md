@@ -1,5 +1,9 @@
 # Marvi Mart — Online Shopping Website
 
+🌐 **Live Demo:** https://marvi-mart.in/
+
+💻 **GitHub Repository:** https://github.com/Nasima-dev/marvi_mart
+
 Marvi Mart is a responsive e-commerce website built with React. It is designed to provide customers with a smooth online shopping experience and store administrators with tools to manage the store.
 
 ## Features
@@ -93,4 +97,3 @@ This repository contains the Marvi Mart website project. Features requiring exte
 **Nasima-dev**
 
 GitHub: https://github.com/Nasima-dev
-
