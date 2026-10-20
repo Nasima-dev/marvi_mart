@@ -1,0 +1,6 @@
+{
+  "name": "Marvi Mart",
+  "description": "Modern Indian e-commerce platform offering women's & men's ethnic fashion, beauty, jewellery, bags, and home essentials with secure PhonePe payment gateway architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

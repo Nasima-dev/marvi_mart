@@ -1,0 +1,36 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# 1. Seamlessly handle legacy or direct references to /src/assets/images/*
+[[redirects]]
+  from = "/src/assets/images/*"
+  to = "/images/:splat"
+  status = 200
+
+# 2. Allow direct access to uploaded product images
+[[redirects]]
+  from = "/uploads/*"
+  to = "/uploads/:splat"
+  status = 200
+
+# 3. Optional Backend API Proxy:
+# If you host the Node/Express backend (server.ts) on a server (e.g. Render, Railway, Fly.io, Cloud Run),
+# uncomment below to proxy all /api requests through Netlify to your backend:
+# [[redirects]]
+#   from = "/api/*"
+#   to = "https://YOUR-BACKEND-API.onrender.com/api/:splat"
+#   status = 200
+#   force = true
+
+# 4. Prevent API endpoints from falling through to the SPA index.html
+[[redirects]]
+  from = "/api/*"
+  to = "/404"
+  status = 404
+
+# 5. Client-side routing SPA fallback for Netlify Drop & Netlify production deployments
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
